@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DS.Controller.Controller">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <HBox prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <JFXButton fx:id="leave" text="返回上一级">
+                     <HBox.margin>
+                        <Insets left="30.0" top="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="reset" text="格式化">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="mkFile" text="创建文件">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="mkDir" text="创建文件夹">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="delete" text="删除选中项">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="info" text="详情">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="exit" text="保存并退出">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox prefHeight="25.0" prefWidth="200.0">
+               <children>
+                  <Label text="路径：">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="path" text="root:\s1\s2\s3">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="150.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <TableView fx:id="table" prefHeight="297.0" prefWidth="600.0">
+              <columns>
+                <TableColumn fx:id="name" prefWidth="170.0" text="名称" />
+                  <TableColumn fx:id="date" prefWidth="197.0" text="日期" />
+                <TableColumn fx:id="size" minWidth="0.0" prefWidth="136.0" text="大小" />
+                  <TableColumn fx:id="type" prefWidth="96.0" text="类型" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+
+   <JFXDialog fx:id="makeDialog">
+      <JFXDialogLayout>
+         <heading>
+            <Label fx:id="makeDialogHead"/>
+         </heading>
+         <body>
+
+            <VBox alignment="CENTER" prefWidth="300" spacing="50">
+
+               <JFXTextField fx:id="makeDialogInput" promptText="请输入路径名称" />
+
+            </VBox>
+
+         </body>
+         <actions>
+            <HBox alignment="CENTER_RIGHT" spacing="20">
+
+               <JFXButton fx:id="makeDialogCancelButton" >取消</JFXButton>
+
+               <JFXButton fx:id="makeDialogOkButton" >确定</JFXButton>
+
+            </HBox>
+         </actions>
+      </JFXDialogLayout>
+   </JFXDialog>
+
+   <JFXDialog fx:id="fileDialog">
+      <JFXDialogLayout>
+         <heading>
+            <Label fx:id="fileDialogName"/>
+         </heading>
+         <body>
+
+            <VBox alignment="CENTER" prefWidth="300" spacing="300">
+
+               <JFXTextArea fx:id="fileDialogContent"  />
+
+            </VBox>
+
+         </body>
+         <actions>
+            <HBox alignment="CENTER_RIGHT" spacing="20">
+
+
+               <JFXButton fx:id="fileDialogOkButton" >确定</JFXButton>
+
+            </HBox>
+         </actions>
+      </JFXDialogLayout>
+   </JFXDialog>
+
+   <JFXDialog fx:id="infoDialog">
+      <JFXDialogLayout>
+         <heading>
+            <Label>详细信息</Label>
+         </heading>
+         <body>
+
+            <VBox alignment="CENTER" prefWidth="500" spacing="20">
+
+               <HBox alignment="CENTER" spacing="20">
+                  <JFXButton prefWidth="170" > 名称：</JFXButton>
+                  <JFXButton fx:id="fName" prefWidth="280"  />
+               </HBox>
+
+               <HBox alignment="CENTER" spacing="20">
+                  <JFXButton prefWidth="170" > 文件类型：</JFXButton>
+                  <JFXButton fx:id="fType" prefWidth="280"  />
+               </HBox>
+
+               <HBox alignment="CENTER" spacing="20">
+                  <JFXButton prefWidth="170"> 创建时间：</JFXButton>
+                  <JFXButton fx:id="fCreateDate" prefWidth="280" />
+               </HBox>
+
+               <HBox alignment="CENTER" spacing="20">
+                  <JFXButton prefWidth="170" > 最近修改时间：</JFXButton>
+                  <JFXButton fx:id="fModifyDate" prefWidth="280"  />
+               </HBox>
+
+               <HBox alignment="CENTER" spacing="20">
+                  <JFXButton prefWidth="170" > 真实大小：</JFXButton>
+                  <JFXButton fx:id="fActualSize" prefWidth="280"  />
+               </HBox>
+
+               <HBox alignment="CENTER" spacing="20">
+                  <JFXButton prefWidth="170" > 占用空间大小：</JFXButton>
+                  <JFXButton fx:id="fOccupiedSize" prefWidth="280"  />
+               </HBox>
+
+            </VBox>
+
+         </body>
+         <actions>
+            <HBox alignment="CENTER" spacing="20">
+
+               <JFXButton fx:id="infoAcceptButton">确定
+               </JFXButton>
+
+            </HBox>
+         </actions>
+      </JFXDialogLayout>
+   </JFXDialog>
+</StackPane>

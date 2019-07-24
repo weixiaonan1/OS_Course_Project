@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MemoryManagement.Controller">
+   <children>
+      <TabPane prefHeight="407.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="动态分区分配方式的模拟">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="dynamicTable" layoutX="200.0" layoutY="27.0" prefHeight="200.0" prefWidth="200.0">
+                          <columns>
+                            <TableColumn fx:id="dynamicMemory" minWidth="4.0" prefWidth="99.0" text="内存" />
+                            <TableColumn fx:id="dynamicUse" prefWidth="100.0" text="占用情况" />
+                          </columns>
+                        </TableView>
+                        <Label layoutX="141.0" layoutY="282.0" text="当前算法：" />
+                        <Label fx:id="dynamicCurFit" layoutX="280.0" layoutY="282.0" text="首次适应算法" />
+                        <Label layoutX="141.0" layoutY="252.0" text="当前作业：" />
+                        <JFXButton fx:id="firstFitButton" layoutX="228.0" layoutY="307.0" style="-fx-background-color: #CCCCCC;" text="首次适应算法" />
+                        <JFXButton fx:id="bestFitButton" layoutX="319.0" layoutY="307.0" style="-fx-background-color: #CCCCCC;" text="最佳适应算法" />
+                        <Label layoutX="141.0" layoutY="311.0" text="算法切换：" />
+                        <Label fx:id="dynamicCurMission" layoutX="274.0" layoutY="252.0" text="作业1申请130K" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="请求调页存储管理方式模拟">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="pagingInstruction" layoutX="91.0" layoutY="35.0" prefHeight="89.0" prefWidth="298.0" style="-fx-cell-size: 20px;">
+                          <columns>
+                              <TableColumn fx:id="pagingId" prefWidth="100.0" text="指令编号" />
+                            <TableColumn fx:id="pagingAddress" prefWidth="89.0" text="指令地址" />
+                            <TableColumn fx:id="pagingPage" prefWidth="108.0" text="指令页号" />
+                          </columns>
+                        </TableView>
+                        <Label layoutX="30.0" layoutY="66.0" text="当前指令" />
+                        <Label layoutX="24.0" layoutY="90.0" text="下一条指令" />
+                        <TableView fx:id="pagingMem" layoutX="91.0" layoutY="179.0" prefHeight="125.0" prefWidth="301.0">
+                           <columns>
+                              <TableColumn fx:id="pagingMemId" prefWidth="100.0" text="内存块编号" />
+                              <TableColumn fx:id="pagingMemPage" prefWidth="89.0" text="页号" />
+                              <TableColumn fx:id="pagingMemRange" prefWidth="110.0" text="地址范围" />
+                           </columns>
+                        </TableView>
+                        <JFXButton fx:id="FIFOButton" layoutX="398.0" layoutY="263.0" style="-fx-background-color: #CCCCCC;" text="FIFO算法" />
+                        <JFXButton fx:id="LRUButton" layoutX="469.0" layoutY="263.0" style="-fx-background-color: #CCCCCC;" text="LRU算法" />
+                        <Label layoutX="474.0" layoutY="237.0" text="算法选择：" />
+                        <Label layoutX="432.0" layoutY="69.0" text="当前算法：" />
+                        <Label fx:id="pagingCurSelect" layoutX="493.0" layoutY="69.0" text="最近最少使用算法" />
+                        <Label layoutX="450.0" layoutY="113.0" text="缺页数：" />
+                        <Label fx:id="pagingMissingNum" layoutX="514.0" layoutY="113.0" text="100" />
+                        <Label layoutX="450.0" layoutY="155.0" text="缺页率：" />
+                        <Label fx:id="pagingMissingPercent" layoutX="514.0" layoutY="155.0" text="100%" />
+                        <JFXButton fx:id="OPTButton" layoutX="536.0" layoutY="263.0" style="-fx-background-color: #CCCCCC;" text="OPT算法" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

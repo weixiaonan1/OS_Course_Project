@@ -1,0 +1,32 @@
+
+.jfx-slider-colored > .thumb {
+    -fx-background-color: #0f9d58;
+    -jfx-default-thumb: #0f9d58;
+}
+
+.circle-button{
+-fx-background-color: #DDDDDD;
+-fx-background-radius: 50em;
+-fx-min-width: 30px;
+-fx-min-height: 30px;
+-fx-max-width: 30px;
+-fx-max-height: 30px;
+}
+
+.big-circle-button{
+    -fx-background-color: #DDDDDD;
+    -fx-background-radius: 50em;
+    -fx-min-width: 35px;
+    -fx-min-height: 35px;
+    -fx-max-width: 35px;
+    -fx-max-height: 35px;
+}
+
+.arrow-button{
+    -fx-background-color: -fx-mark-highlight-color, -fx-mark-color;
+    -fx-background-insets: 0 0 -1 0, 0;
+    -fx-padding: 0.25em;
+    -fx-shape: "M 0 -3.5 v 7 l 4 -3.5 z";
+}
+
+

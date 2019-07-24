@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane fx:id="root" prefHeight="694.0" prefWidth="366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="elevator.Controller">
+   <children>
+       <VBox alignment="CENTER" maxHeight="796.0" maxWidth="600" prefHeight="796.0" prefWidth="366.0" style="-fx-background-color: #4B4B4B;">
+          <children>
+      
+              <!--楼层选择-->
+              <HBox alignment="CENTER" prefHeight="452.0" prefWidth="366.0" spacing="20">
+         <children>
+                     <VBox alignment="CENTER" prefHeight="467.0" prefWidth="0.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <JFXButton mnemonicParsing="false" text="L20" textAlignment="CENTER" textFill="#dddddd" />
+                              <JFXButton id="L20-down" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↓">
+                                 <HBox.margin>
+                                    <Insets left="42.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <Line endX="40.0" startX="-100.0" stroke="#dddddd" />
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <JFXButton mnemonicParsing="false" text="L19" textAlignment="CENTER" textFill="#dddddd" />
+                              <JFXButton id="L19-up" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↑">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton id="L19-down" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↓">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <Line endX="40.0" startX="-100.0" stroke="#dddddd" />
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <JFXButton mnemonicParsing="false" text="L18" textAlignment="CENTER" textFill="#dddddd" />
+                              <JFXButton id="L18-up" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↑">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton id="L18-down" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↓">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <Line endX="40.0" startX="-100.0" stroke="#dddddd" />
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <JFXButton mnemonicParsing="false" text="L17" textAlignment="CENTER" textFill="#dddddd" />
+                              <JFXButton id="L17-up" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↑">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton id="L17-down" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↓">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <Line endX="40.0" startX="-100.0" stroke="#dddddd" />
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <JFXButton mnemonicParsing="false" text="L16" textAlignment="CENTER" textFill="#dddddd" />
+                              <JFXButton id="L16-up" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↑">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton id="L16-down" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↓">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <Line endX="40.0" startX="-100.0" stroke="#dddddd" />
+                        <HBox prefHeight="23.0" prefWidth="0.0">
+                           <children>
+                              <JFXButton mnemonicParsing="false" text="L15" textAlignment="CENTER" textFill="#dddddd" />
+                              <JFXButton id="L15-up" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↑">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton id="L15-down" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↓">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <Line endX="40.0" startX="-100.0" stroke="#dddddd" />
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <JFXButton mnemonicParsing="false" text="L14" textAlignment="CENTER" textFill="#dddddd" />
+                              <JFXButton id="L14-up" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↑">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton id="L14-down" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↓">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <Line endX="40.0" startX="-100.0" stroke="#dddddd" />
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <JFXButton mnemonicParsing="false" text="L13" textAlignment="CENTER" textFill="#dddddd" />
+                              <JFXButton id="L13-up" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↑">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton id="L13-down" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↓">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <Line endX="40.0" startX="-100.0" stroke="#dddddd" />
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <JFXButton mnemonicParsing="false" text="L12" textAlignment="CENTER" textFill="#dddddd" />
+                              <JFXButton id="L12-up" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↑">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton id="L12-down" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↓">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <Line endX="40.0" startX="-100.0" stroke="#dddddd" />
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <JFXButton mnemonicParsing="false" text="L11" textAlignment="CENTER" textFill="#dddddd" />
+                              <JFXButton id="L11-up" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↑">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton id="L11-down" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↓">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <Line endX="40.0" startX="-100.0" stroke="#dddddd" />
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <JFXButton mnemonicParsing="false" text="L10" textAlignment="CENTER" textFill="#dddddd" />
+                              <JFXButton id="L10-up" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↑">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton id="L10-down" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↓">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <Line endX="40.0" startX="-100.0" stroke="#dddddd" />
+                        <HBox prefHeight="22.0" prefWidth="163.0">
+                           <children>
+                              <JFXButton mnemonicParsing="false" text="L9" textAlignment="CENTER" textFill="#dddddd" />
+                              <JFXButton id="L9-up" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↑">
+                                 <HBox.margin>
+                                    <Insets left="26.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton id="L9-down" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↓">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <Line endX="40.0" startX="-100.0" stroke="#dddddd" />
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <JFXButton mnemonicParsing="false" text="L8" textAlignment="CENTER" textFill="#dddddd" />
+                              <JFXButton id="L8-up" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↑">
+                                 <HBox.margin>
+                                    <Insets left="26.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton id="L8-down" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↓">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <Line endX="40.0" startX="-100.0" stroke="#dddddd" />
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <JFXButton mnemonicParsing="false" text="L7" textAlignment="CENTER" textFill="#dddddd" />
+                              <JFXButton id="L7-up" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↑">
+                                 <HBox.margin>
+                                    <Insets left="26.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton id="L7-down" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↓">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <Line endX="40.0" startX="-100.0" stroke="#dddddd" />
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <JFXButton mnemonicParsing="false" text="L6" textAlignment="CENTER" textFill="#dddddd" />
+                              <JFXButton id="L6-up" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↑">
+                                 <HBox.margin>
+                                    <Insets left="26.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton id="L6-down" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↓">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <Line endX="40.0" startX="-100.0" stroke="#dddddd" />
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <JFXButton mnemonicParsing="false" text="L5" textAlignment="CENTER" textFill="#dddddd" />
+                              <JFXButton id="L5-up" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↑">
+                                 <HBox.margin>
+                                    <Insets left="26.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton id="L5-down" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↓">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <Line endX="40.0" startX="-100.0" stroke="#dddddd" />
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <JFXButton mnemonicParsing="false" text="L4" textAlignment="CENTER" textFill="#dddddd" />
+                              <JFXButton id="L4-up" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↑">
+                                 <HBox.margin>
+                                    <Insets left="26.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton id="L4-down" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↓">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <Line endX="40.0" startX="-100.0" stroke="#dddddd" />
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <JFXButton mnemonicParsing="false" text="L3" textAlignment="CENTER" textFill="#dddddd" />
+                              <JFXButton id="L3-up" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↑">
+                                 <HBox.margin>
+                                    <Insets left="26.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton id="L3-down" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↓">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <Line endX="40.0" startX="-100.0" stroke="#dddddd" />
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <JFXButton mnemonicParsing="false" text="L2" textAlignment="CENTER" textFill="#dddddd" />
+                              <JFXButton id="L2-up" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↑">
+                                 <HBox.margin>
+                                    <Insets left="26.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton id="L2-down" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↓">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <Line endX="40.0" startX="-100.0" stroke="#dddddd" />
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <JFXButton mnemonicParsing="false" text="L1" textAlignment="CENTER" textFill="#dddddd" />
+                              <JFXButton id="L1-up" mnemonicParsing="false" scaleX="0.8" scaleY="0.8" scaleZ="0.8" style="-fx-background-color: #DDDDDD;" text="↑">
+                                 <HBox.margin>
+                                    <Insets left="46.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <Line endX="40.0" startX="-100.0" stroke="#dddddd" />
+                     </children></VBox>
+         
+                     <!--电梯运行图示-->
+                     <VBox alignment="CENTER" prefHeight="473.0" prefWidth="213.0" spacing="20">
+                         <children>
+                             <HBox alignment="CENTER" prefHeight="400.0" prefWidth="220.0" spacing="5.0">
+                                 <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                           <JFXSlider id="e1-slider" fx:id="slider1" majorTickUnit="1.0" max="20" min="1" minorTickCount="0" orientation="VERTICAL" prefHeight="400" styleClass="jfx-slider-colored">
+                                       <VBox.margin>
+                                          <Insets left="10.0" />
+                                       </VBox.margin></JFXSlider>
+                                    <JFXButton id="e1-display" mnemonicParsing="false" text="20↑" textFill="#dddddd">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin></JFXButton>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                           <JFXSlider id="e2-slider" fx:id="slider2" majorTickUnit="1.0" max="20" min="1" minorTickCount="0" orientation="VERTICAL" prefHeight="400" styleClass="jfx-slider-colored">
+                                       <VBox.margin>
+                                          <Insets left="8.0" />
+                                       </VBox.margin></JFXSlider>
+                                    <JFXButton id="e2-display" mnemonicParsing="false" text="20-" textFill="#dddddd">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin></JFXButton>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                           <JFXSlider id="e3-slider" fx:id="slider3" majorTickUnit="1.0" max="20" min="1" minorTickCount="0" orientation="VERTICAL" prefHeight="400" styleClass="jfx-slider-colored">
+                                       <VBox.margin>
+                                          <Insets left="8.0" />
+                                       </VBox.margin></JFXSlider>
+                                    <JFXButton id="e3-display" mnemonicParsing="false" text="20-" textFill="#dddddd">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin></JFXButton>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                           <JFXSlider id="e4-slider" fx:id="slider4" majorTickUnit="1.0" max="20" min="1" minorTickCount="0" orientation="VERTICAL" prefHeight="400" styleClass="jfx-slider-colored">
+                                       <VBox.margin>
+                                          <Insets left="8.0" />
+                                       </VBox.margin></JFXSlider>
+                                    <JFXButton id="e4-display" mnemonicParsing="false" text="19↑" textFill="#dddddd">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin></JFXButton>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                           <JFXSlider id="e5-slider" fx:id="slider5" majorTickUnit="1.0" max="20" min="1" minorTickCount="0" orientation="VERTICAL" prefHeight="400" styleClass="jfx-slider-colored">
+                                       <VBox.margin>
+                                          <Insets left="8.0" />
+                                       </VBox.margin></JFXSlider>
+                                    <JFXButton id="e5-display" mnemonicParsing="false" text="20-" textFill="#dddddd">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin></JFXButton>
+                                 </children>
+                              </VBox>
+                                 </children>
+                             </HBox>
+                         </children>
+                     </VBox>
+         </children>
+              </HBox>
+      
+      
+              <HBox alignment="CENTER" prefHeight="255.0" prefWidth="346.0" spacing="20">
+         <children>
+                  <VBox prefHeight="209.0" prefWidth="229.0">
+                     <children>
+                        <HBox prefHeight="60.0" prefWidth="227.0">
+                           <children>
+                              <VBox prefHeight="83.0" prefWidth="32.0">
+                                 <children>
+                                    <JFXButton id="up-display" mnemonicParsing="false" rotate="270.0" style="-fx-background-color: white;" styleClass="arrow-button" text="u" textFill="TRANSPARENT">
+                                       <VBox.margin>
+                                          <Insets left="5.0" top="2.0" />
+                                       </VBox.margin>
+                                    </JFXButton>
+                                    <JFXButton id="down-display" mnemonicParsing="false" rotate="90.0" style="-fx-background-color: white;" styleClass="arrow-button" text="d" textFill="TRANSPARENT">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="5.0" top="2.0" />
+                                       </VBox.margin>
+                                    </JFXButton>
+                                 </children>
+                              </VBox>
+                              <JFXButton id="floor_display" mnemonicParsing="false" prefHeight="30.0" prefWidth="54.0" text="20" textFill="#ff6600">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets top="7.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton id="open-door" mnemonicParsing="false" styleClass="big-circle-button" text="&lt;|&gt;" textAlignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets right="6.0" top="6.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton id="close-door" mnemonicParsing="false" styleClass="big-circle-button" text="&gt;|&lt;" textAlignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets right="6.0" top="6.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton id="alarm" mnemonicParsing="false" styleClass="big-circle-button" text="Ω">
+                                 <HBox.margin>
+                                    <Insets top="6.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <GridPane hgap="10.0" vgap="25.0">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <JFXButton id="e11" mnemonicParsing="false" styleClass="circle-button" text="11" textAlignment="CENTER" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton id="e12" mnemonicParsing="false" styleClass="circle-button" text="12" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton id="e13" mnemonicParsing="false" styleClass="circle-button" text="13" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton id="e14" mnemonicParsing="false" styleClass="circle-button" text="14" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton id="e15" mnemonicParsing="false" styleClass="circle-button" text="15" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton id="e6" mnemonicParsing="false" styleClass="circle-button" text="6" textAlignment="CENTER" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton id="e7" mnemonicParsing="false" styleClass="circle-button" text="7" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton id="e8" mnemonicParsing="false" styleClass="circle-button" text="8" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton id="e9" mnemonicParsing="false" styleClass="circle-button" text="9" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton id="e10" mnemonicParsing="false" styleClass="circle-button" text="10" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton id="e1" mnemonicParsing="false" styleClass="circle-button" text="1" textAlignment="CENTER" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton id="e2" mnemonicParsing="false" styleClass="circle-button" text="2" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton id="e3" mnemonicParsing="false" styleClass="circle-button" text="3" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton id="e4" mnemonicParsing="false" styleClass="circle-button" text="4" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton id="e5" mnemonicParsing="false" prefWidth="87.0" styleClass="circle-button" text="5" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton id="e16" mnemonicParsing="false" styleClass="circle-button" text="16" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton id="e17" mnemonicParsing="false" styleClass="circle-button" text="17" textAlignment="CENTER" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton id="e18" mnemonicParsing="false" styleClass="circle-button" text="18" textAlignment="CENTER" GridPane.columnIndex="2">
+                                 <font>
+                                    <Font size="10.0" />
+                                   </font>
+                              </JFXButton>
+                              <JFXButton id="e19" mnemonicParsing="false" styleClass="circle-button" text="19" textAlignment="CENTER" GridPane.columnIndex="3">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton id="e20" mnemonicParsing="false" styleClass="circle-button" text="20" textAlignment="CENTER" GridPane.columnIndex="4">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+                     <children>
+
+                             <JFXRadioButton fx:id="radio_1" contentDisplay="TOP" selected="true" style="-jfx-selected-color: #DDDDDD;" text="elevator 1" textFill="#dddddd">
+                           <toggleGroup>
+                                     <ToggleGroup fx:id="toggleGroup" />
+                           </toggleGroup>
+                             </JFXRadioButton>
+                             <JFXRadioButton fx:id="radio_2" contentDisplay="TOP" selected="false" style="-jfx-selected-color: #DDDDDD;" styleClass="custom-jfx-radio-button" text="elevator 2" textFill="#dddddd" toggleGroup="$toggleGroup" />
+                             <JFXRadioButton fx:id="radio_3" contentDisplay="LEFT" selected="false" style="-jfx-selected-color: #DDDDDD;" styleClass="custom-jfx-radio-button" text="elevator 3" textFill="#dddddd" toggleGroup="$toggleGroup" />
+                             <JFXRadioButton fx:id="radio_4" contentDisplay="CENTER" prefWidth="42.0" selected="false" style="-jfx-selected-color: #DDDDDD;" styleClass="custom-jfx-radio-button" text="elevator 4" textFill="#dddddd" toggleGroup="$toggleGroup" />
+                             <JFXRadioButton fx:id="radio_5" contentDisplay="BOTTOM" selected="false" style="-jfx-selected-color: #DDDDDD;" styleClass="custom-jfx-radio-button" text="elevator 5" textFill="#dddddd" toggleGroup="$toggleGroup" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets top="25.0" />
+                     </HBox.margin>
+                  </VBox>
+         </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+      
+              </HBox>
+          </children>
+   
+   
+       </VBox>
+   </children>
+
+
+
+</StackPane>

@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Class-Path: jfoenix-8.0.8.jar
+Main-Class: MemoryManagement.Main
+

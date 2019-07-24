@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact name="MemoryManagement:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/MemoryManagement_jar</output-path>
+    <root id="root">
+      <element id="archive" name="MemoryManagement.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/src/MemoryManagement/resourses/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="MemoryManagement" />
+      </element>
+      <element id="file-copy" path="$PROJECT_DIR$/../../1/Elevator/src/lib/jfoenix-8.0.8.jar" />
+    </root>
+  </artifact>
+</component>

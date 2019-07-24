@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Elevator:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Elevator_jar</output-path>
+    <root id="archive" name="Elevator.jar">
+      <element id="module-output" name="Elevator" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/lib/jfoenix-8.0.8.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
