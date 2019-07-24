@@ -14,7 +14,7 @@
 
 ###  1. 界面设计
 
-![UI](E:\课程资料\操作系统\UI.png)
+![1](Images/1.png)
 
 ​        整个界面分为四部分， 第一部分为左上角的外部按钮，第二部分为右上角的电梯运行模拟，第三部分为电梯内部，第四部分为电梯切换。
 
@@ -46,7 +46,7 @@
 
    电梯运行状态转换图如下：
 
-   ![state](E:\课程资料\操作系统\state.png)
+![2](Images/2.png)
 
 #### 2. 调度算法设计
 
@@ -71,7 +71,7 @@
 
    - 外调度流程图：
 
-     ![外调度](E:\课程资料\操作系统\外调度.png)
+     ![3](Images/3.png)
 
    - 电梯内部对外任务的处理：电梯内部只记录了外任务的信息，处理仍是当作内任务处理。
 
@@ -150,34 +150,31 @@ audioClip.play();
 
 - **UI**：
 
-  ![1557413495634](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1557413495634.png)
+  ![4](Images/4.png)
 
 - 电梯内调度打印
 
-  ![1557413662763](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1557413662763.png)
+  ![5](Images/5.png)
 
 ##### 2. 外调度算法优先选择运行方向相同且最近的电梯
 
 
 - **UI**：
 
-  ![1557413886830](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1557413886830.png)
+  ![6](Images/6.png)
 
 - 电梯外调度打印
 
-  ![1557413935318](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1557413935318.png)
+  ![7](Images/7.png)
   
-  ![1557413906937](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1557413906937.png)
-
-![1557413950435](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1557413950435.png)
 
 ##### 3. 外调度算法优先选择静止且最近的电梯
 
 - **UI**：
 
-  ![1557414104245](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1557414104245.png)
+  ![8](Images/8.png)
 
 - 电梯外调度打印
 
-  ![1557414125946](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1557414125946.png)
+  ![9](Images/9.png)
 

@@ -18,7 +18,7 @@
 
 ### 1.界面设计
 
-![1559269609468](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1559269609468.png)
+![1](Images/1.png)
 
 #### 1.1 整体界面
 
@@ -32,7 +32,7 @@
 
 #### 1.3 调页存储
 
-![1559270313808](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1559270313808.png)
+![2](Images/2.png)
 
 (为便于观察，地址采用十进制表示方式)
 
@@ -51,7 +51,7 @@
 
 #####  2.1.1 分配流程：
 
-![流程图1](C:\Users\Administrator\Desktop\流程图1.png)
+![3](Images/3.png)
 
 ##### 2.1.2 相关算法
 
@@ -129,7 +129,7 @@
 
 ##### 2.2.1 流程图
 
-![流程图2](C:\Users\Administrator\Desktop\流程图2.png)
+![4](Images/4.png)
 
 ##### 2.2.2 相关算法
 
@@ -190,33 +190,33 @@
 
 - 首次适应算法
 
-  ![1559280321598](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1559280321598.png)
+  ![5](Images/5.png)
 
   结果：
 
-  ![1559280340160](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1559280340160.png)
+  ![6](Images/6.png)
 
 - 最佳适应算法
 
-  ![1559280446895](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1559280446895.png)
+  ![7](Images/7.png)
 
   结果：
 
-  ![1559280467647](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1559280467647.png)
+  ![8](Images/8.png)
 
 #### 3.2 请求调页存储管理方式模拟
 
 - FIFO算法
 
-  ![1559280615249](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1559280615249.png)
+  ![9](Images/9.png)
 
 - LRU算法
 
-  ![1559280629446](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1559280629446.png)
+  ![10](Images/10.png)
 
 - OPT算法
 
-  ![1559280647599](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1559280647599.png)
+  ![11](Images/11.png)
 
 - 运行结果比较
 

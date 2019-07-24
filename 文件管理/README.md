@@ -14,7 +14,7 @@
 
 ### 1.界面设计
 
-![1560579242943](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1560579242943.png)
+![1](Images/1.png)
 
 ​	界面由**功能按钮**、**当前路径**、**文件列表**三部分组成。
 
@@ -59,15 +59,15 @@
 
   - 系统同步
 
-    ![1560588040727](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1560588040727.png)
+    ![2](Images/2.png)
 
-    ![1560588032329](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1560588032329.png)
+    ![3](Images/3.png)
 
   - 系统初始化
 
-    ![1560588338768](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1560588338768.png)
+    ![4](Images/4.png)
 
-    ![1560588360169](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1560588360169.png)
+    ![5](Images/5.png)
 
 
 
@@ -83,13 +83,11 @@
 
   - 格式化前
 
-    
-
-    ![1560582727235](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1560582727235.png)
+    ![6](Images/6.png)
 
   - 格式化后
 
-    ![1560582850498](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1560582850498.png)
+    ![7](Images/7.png)
 
 
 
@@ -105,19 +103,19 @@
 
   - 输入文件名
 
-    ![1560583468602](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1560583468602.png)
+    ![8](Images/8.png)
 
     - 如果有冲突
 
-      ![1560583397894](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1560583397894.png)
+      ![9](Images/9.png)
 
   - 创建成功
 
-    ![1560583481299](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1560583481299.png)
+    ![10](Images/10.png)
 
     - 逐级修改上级目录信息
 
-      ![1560583520091](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1560583520091.png)
+      ![11](Images/11.png)
 
 
 
@@ -139,15 +137,15 @@
 
   - 选中要删除的文件
 
-    ![1560583815749](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1560583815749.png)
+    ![12](Images/12.png)
 
   - 删除成功
 
-    ![1560583851501](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1560583851501.png)
+    ![13](Images/13.png)
 
   - 逐级修改上级目录
 
-    ![1560583909533](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1560583909533.png)
+    ![14](Images/14.png)
 
 
 
@@ -171,11 +169,11 @@
 
   - 选中要进入的文件夹
 
-    ![1560584306181](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1560584306181.png)
+    ![15](Images/15.png)
 
   - 进入成功
 
-    ![1560584328469](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1560584328469.png)
+    ![1560584328469](Images/1560584328469.png)
 
 
 
@@ -193,15 +191,15 @@
 
   - 当前目录
 
-    ![1560584631029](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1560584631029.png)
+    ![1560584631029](Images/1560584631029.png)
 
   - 返回上一级
 
-    ![1560584644639](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1560584644639.png)
+    ![1560584644639](Images/1560584644639.png)
 
   - 已在根目录
 
-    ![1560584662288](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1560584662288.png)
+    ![1560584662288](Images/1560584662288.png)
 
 
 
@@ -213,7 +211,7 @@
 
   展示：
 
-  ![1560586468681](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1560586468681.png)
+  ![1560586468681](Images/1560586468681.png)
 
 
 
@@ -227,7 +225,7 @@
 
   展示：
 
-  ![1560586654881](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1560586654881.png)
+  ![1560586654881](Images/1560586654881.png)
 
 
 
@@ -247,19 +245,19 @@
 
   - 写入前：
 
-    ![1560587590471](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1560587590471.png)
+    ![1560587590471](Images/1560587590471.png)
 
-    ![1560587489146](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1560587489146.png)
+    ![1560587489146](Images/1560587489146.png)
 
   - 写入后：
 
-    ![1560587626023](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1560587626023.png)
+    ![1560587626023](Images/1560587626023.png)
 
-    ![1560587651641](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1560587651641.png)
+    ![1560587651641](Images/1560587651641.png)
   
 - 逐级更新上一级目录
   
-    ![1560587724745](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1560587724745.png)
+    ![1560587724745](Images/1560587724745.png)
 
 
 
@@ -271,7 +269,7 @@
 
   展示：
 
-  ![1560587842927](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1560587842927.png)
+  ![1560587842927](Images/1560587842927.png)
 
 
 
